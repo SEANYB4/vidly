@@ -21,8 +21,7 @@ class Table extends Component {
 
     render() { 
         return (
-
-            <div>
+            <React.Fragment>
                 <h2>{this.state.movies.length>0 ? `Showing ${this.state.movies.length} movies in the database.` : "No movies."}</h2>
                <table className='table'>
 
@@ -51,7 +50,7 @@ class Table extends Component {
         
                </table>
                     
-            </div>
+            </React.Fragment>
         );
     }
 }
